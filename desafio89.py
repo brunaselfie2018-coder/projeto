@@ -3,8 +3,8 @@ quant = 0
 
 while True:
     nome = str(input('Nome: '))
-    nota1 = float(input('Nota 1: '))
-    nota2 = float(input('Nota 2: '))
+    nota1 = float(input('Nota 01: '))
+    nota2 = float(input('Nota 02: '))
     media = (nota1 + nota2) / 2
     lista.append([nome, [nota1, nota2], media])
 
