@@ -1,0 +1,26 @@
+#promoções pela froma de pagamento
+print('Seja Bem Vindo á Bruna Modas!')
+preco = float(input('Qual o valor da compra:'))
+print('Escolha a forma de pagamento:')
+print ('''[1] Á vista dinehiro/cheque
+       [2] Á vista no cartão
+       [3] 2X no cartão
+       [4] 3X no cartão ou mais...''')
+pagamento = int(input('Qual será a forma de pagamento?'))
+
+if pagamento == 1:
+    total = preco - (preco * 10 / 100)
+elif pagamento ==2:
+    total = preco - (preco * 5 / 100)
+elif pagamento == 3:
+    total = preco
+    parcela = total / 2
+    print (f'Você parcelou em 2x de {parcela}')
+elif pagamento == 4:
+     total = preco + (preco * 20 / 100)
+     totalparc = int(input('Em quantas parcelas?'))
+     parcela = total/ totalparc
+     print (f' Sua compra será parcelada em {totalparc} de {parcela}')
+else:
+    print('OPÇAÕ INVALIDA!')
+print (f'O valor final da sua compra é de {total}')
